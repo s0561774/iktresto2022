@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/vendor/bootstrap/bootstrap.min.css">
+    <title>Delice D'Afrique</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                          <th scope="col">name</th>
+                          <th scope="col">email</th>
+                          <th scope="col">phoneNumber</th>
+                          <th scope="col">datetimepicker</th>
+                          <th scope="col">time</th>
+                          <th scope="col">selectPerson</th>
+                          <th scope="col">message</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <% list.forEach(function (elem){ %>
+                        <tr>
+                            <td><%= elem.name %> </td>
+                            <td> <%= elem.email %> </td>
+                            <td> <%= elem.phoneNumber %></td>
+                            <td><%= elem.datetimepicker %></td>
+                            <td> <%= elem.time %></td>
+                            <td> <%= elem.selectPerson %> </td>
+                            <td> <%= elem.message %> </td>
+                        </tr>
+                        <% });%>
+                      </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        
+</body>
+</html>
